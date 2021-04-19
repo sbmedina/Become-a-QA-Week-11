@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
 const port = 7000;
+const cors = require('cors')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -16,9 +18,9 @@ app.listen(port, () => {
 var handleRegister = function (req, res) {
   console.log(req.body);
   const newUser = {
-    name: req.body.fullName,
+    fullName: req.body.fullName,
     email: req.body.email,
-    pass: req.body.password,
+    password: req.body.password,
   };
   if (!newUser.fullName || !newUser.email || !newUser.password) {
     return res
