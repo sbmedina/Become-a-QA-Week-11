@@ -1,0 +1,24 @@
+{
+  "name": "become-a-qa-week-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbmedina/Become-a-QA-Week-11.git"
+  },
+  "author": "Blas Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbmedina/Become-a-QA-Week-11/issues"
+  },
+  "homepage": "https://github.com/sbmedina/Become-a-QA-Week-11#readme"
+}
